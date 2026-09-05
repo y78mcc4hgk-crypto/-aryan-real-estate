@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aryan Real Estate | Badlapur</title>
+<meta name="description" content="Aryan Real Estate - Buy, Sell and Rent properties in Badlapur.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f4ed;color:#171717;line-height:1.5}
+header{background:linear-gradient(135deg,#101010,#292929);color:#fff;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:25px;font-weight:800;letter-spacing:1px;color:#f1c75b}.logo span{display:block;color:#fff;font-size:12px;letter-spacing:4px}
+nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:14px}
+.hero{padding:70px 7%;background:linear-gradient(120deg,#121212 0%,#292929 55%,#8b6a2b 100%);color:white}
+.hero-inner{max-width:1100px;margin:auto}.tag{color:#f1c75b;font-weight:700;letter-spacing:2px;font-size:13px}
+h1{font-size:clamp(38px,7vw,70px);line-height:1.03;margin:14px 0}.hero p{max-width:650px;color:#ddd;font-size:18px}
+.btn{display:inline-block;margin-top:25px;padding:14px 24px;border-radius:8px;text-decoration:none;font-weight:700}
+.gold{background:#f1c75b;color:#111}.whatsapp{background:#20a84b;color:#fff;margin-left:8px}
+section{padding:55px 7%}.container{max-width:1100px;margin:auto}
+h2{text-align:center;font-size:34px;margin-bottom:12px}.sub{text-align:center;color:#666;margin-bottom:30px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;padding:28px;border-radius:15px;box-shadow:0 7px 25px #00000012;border:1px solid #eee}.card h3{font-size:23px;margin:10px 0}.icon{font-size:35px}
+.form-wrap{max-width:760px;margin:auto;background:#fff;padding:30px;border-radius:18px;box-shadow:0 10px 35px #00000015}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-weight:700;font-size:14px}.field{margin-top:5px;width:100%;padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px;background:#fff}
+.full{grid-column:1/-1}
+.submit{width:100%;border:0;cursor:pointer;background:#111;color:#f1c75b;padding:15px;border-radius:8px;font-size:17px;font-weight:800;margin-top:6px}
+.note{text-align:center;color:#777;font-size:12px;margin-top:12px}
+footer{background:#111;color:#bbb;text-align:center;padding:25px 7%}footer strong{color:#f1c75b}
+@media(max-width:700px){header{padding:18px 5%}nav{display:none}.hero,section{padding:45px 5%}.cards,.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.whatsapp{margin-left:0;margin-top:10px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">ARYAN<span>REAL ESTATE</span></div>
+  <nav><a href="#services">Services</a><a href="#form">Enquire</a><a href="tel:8591852417">Call</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="tag">BADLAPUR'S REAL ESTATE PARTNER</div>
+    <h1>Find Your<br>Perfect Property.</h1>
+    <p>Looking to buy, sell or rent a home, flat, plot or shop in Badlapur? Tell us what you need and our team will contact you.</p>
+    <a class="btn gold" href="#form">Send Enquiry</a>
+    <a class="btn whatsapp" href="https://wa.me/918591852417" target="_blank">WhatsApp Us</a>
+  </div>
+</section>
+
+<section id="services">
+<div class="container">
+<h2>What are you looking for?</h2>
+<p class="sub">Simple, local and personalized property assistance.</p>
+<div class="cards">
+  <div class="card"><div class="icon">🏠</div><h3>Buy</h3><p>Find a property that matches your budget, location and requirements.</p></div>
+  <div class="card"><div class="icon">🤝</div><h3>Sell</h3><p>Share your property details and connect with interested buyers.</p></div>
+  <div class="card"><div class="icon">🔑</div><h3>Rent</h3><p>Looking for a tenant or a rental property? Send us your requirements.</p></div>
+</div>
+</div>
+</section>
+
+<section id="form">
+<div class="container">
+<h2>Tell Us Your Requirement</h2>
+<p class="sub">Fill the form below. When you submit, WhatsApp will open with your enquiry ready to send to Aryan Real Estate.</p>
+<div class="form-wrap">
+<form id="leadForm">
+<div class="form-grid">
+<div><label>Your Name *</label><input class="field" id="name" required placeholder="Enter your name"></div>
+<div><label>Phone Number *</label><input class="field" id="phone" type="tel" required placeholder="Enter phone number"></div>
+<div><label>I want to *</label>
+<select class="field" id="purpose" required>
+<option value="">Select</option><option>Buy</option><option>Sell</option><option>Rent a Property</option><option>Rent Out My Property</option>
+</select></div>
+<div><label>Property Type</label>
+<select class="field" id="type"><option>Flat / Apartment</option><option>House</option><option>Plot</option><option>Shop / Commercial</option><option>Other</option></select></div>
+<div><label>Preferred Location</label><input class="field" id="location" placeholder="e.g. Badlapur East"></div>
+<div><label>Budget / Expected Price</label><input class="field" id="budget" placeholder="e.g. ₹50 lakh"></div>
+<div class="full"><label>Message / Requirements</label><textarea class="field" id="message" rows="4" placeholder="Tell us anything else you need..."></textarea></div>
+<div class="full"><button class="submit" type="submit">SUBMIT ENQUIRY ON WHATSAPP</button></div>
+</div>
+<p class="note">Your details are sent directly to Aryan Real Estate on WhatsApp.</p>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+  <p><strong>ARYAN REAL ESTATE</strong> · Badlapur</p>
+  <p>Call / WhatsApp: <strong>8591852417</strong></p>
+</footer>
+
+<script>
+document.getElementById("leadForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  const name=document.getElementById("name").value.trim();
+  const phone=document.getElementById("phone").value.trim();
+  const purpose=document.getElementById("purpose").value;
+  const type=document.getElementById("type").value;
+  const location=document.getElementById("location").value.trim() || "Not specified";
+  const budget=document.getElementById("budget").value.trim() || "Not specified";
+  const message=document.getElementById("message").value.trim() || "No additional message";
+  const text =
+`🏠 *NEW PROPERTY ENQUIRY — ARYAN REAL ESTATE*
+
+👤 Name: ${name}
+📞 Phone: ${phone}
+🎯 Requirement: ${purpose}
+🏢 Property Type: ${type}
+📍 Location: ${location}
+💰 Budget/Expected Price: ${budget}
+📝 Message: ${message}`;
+
+  window.open("https://wa.me/918591852417?text="+encodeURIComponent(text), "_blank");
+});
+</script>
+</body>
+</html>
